@@ -6,12 +6,14 @@ def encoder(password):
         string = string + str(int(password[i]) + 3)
     return string
 
+
 # Decodes password
 def decoder(password):
     string = ""
-    for i in range(len(passsword)):
+    for i in range(len(password)):
         string = string + str(int(password[i]) - 3)
     return string
+
 
 while True:
     # Displays menu for user to choose from
